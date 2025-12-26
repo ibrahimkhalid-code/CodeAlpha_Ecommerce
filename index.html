@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+    <!-- FAV ICON -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <!-- FILE CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- FONTAWSOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="topHeader">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+          <form action="" class="searchBox">
+            <div class="selectBox">
+              <select name="category" id="category">
+                <option value="All Categories">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Home & Kitchen">Home & Kitchen</option>
+                <option value="Books">Books</option>
+                <option value="Sports">Sports</option>
+                <option value="Toys">Toys</option>
+                <option value="Beauty">Beauty</option>
+              </select>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="search for products"
+                required
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </form>
+          <div class="headerFav">
+            <i class="fa fa-heart"></i>
+            <span class="count cartCount">0</span>
+          </div>
+          <div class="headerCart">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="count cartCount">0</span>
+          </div>
+      </div>
+    </header>
+  </body>
+</html>
