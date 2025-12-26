@@ -20,13 +20,13 @@
   <body>
     <header>
       <div class="topHeader">
-        <div class="container">
+        <div class="container flex">
           <a href="index.html" class="logo">
             <img src="img/logo.png" alt="logo" />
           </a>
-          <form action="" class="searchBox">
-            <div class="selectBox">
-              <select name="category" id="category">
+          <form action="" class="searchBox flex-column">
+            <div class="selectBox position-relative flex">
+              <select name="category" id="category" class="mr-20">
                 <option value="All Categories">All Categories</option>
                 <option value="Electronics">Electronics</option>
                 <option value="Clothing">Clothing</option>
@@ -37,6 +37,7 @@
                 <option value="Beauty">Beauty</option>
               </select>
               <input
+              class="input-field"
                 type="search"
                 name="search"
                 id="search"
@@ -46,13 +47,15 @@
               <button type="submit"><i class="fa fa-search"></i></button>
             </div>
           </form>
-          <div class="headerFav">
-            <i class="fa fa-heart"></i>
-            <span class="count cartCount">0</span>
-          </div>
-          <div class="headerCart">
-            <i class="fa fa-shopping-cart"></i>
-            <span class="count cartCount">0</span>
+          <div class="headerIcons flex">
+            <div class="headerFav">
+                <i class="fa-regular fa-heart"></i>
+                <span class="count cartCount mr-20 flex">0</span>
+            </div>
+            <div class="headerCart">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="count cartCount flex">0</span>
+            </div>
           </div>
       </div>
     </header>
