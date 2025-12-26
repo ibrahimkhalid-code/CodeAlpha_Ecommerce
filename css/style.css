@@ -157,12 +157,6 @@ textarea {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.hidden {
-  display: none;
-}
-.visible {
-  display: block;
-}
 .clearfix::after {
   content: "";
   display: table;
@@ -273,19 +267,28 @@ header .bottomHeader .categoryNav .categoryNavList {
   background-color: var(--white-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 10px 0;
   top: 100%;
   left: 0;
   width: 200px;
   flex-direction: column;
   align-items: flex-start;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 0.3s ease;
 }
-.categoryNavList a {
+header .bottomHeader .categoryNav .categoryNavList.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+header .bottomHeader .categoryNav .categoryNavList a {
   padding: 10px 20px;
   width: 100%;
   color: var(--text-color);
   border-bottom: #111827 1px solid;
   transition: background-color 0.3s ease;
+  justify-content: flex-start;
 }
 .categoryNavList a:hover {
   background-color: var(--bg-color);
