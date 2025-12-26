@@ -19,6 +19,7 @@
   </head>
   <body>
     <header>
+      <!-- TOP HEADER -->
       <div class="topHeader">
         <div class="container flex">
           <a href="index.html" class="logo">
@@ -37,7 +38,7 @@
                 <option value="Beauty">Beauty</option>
               </select>
               <input
-              class="input-field"
+                class="input-field"
                 type="search"
                 name="search"
                 id="search"
@@ -49,15 +50,54 @@
           </form>
           <div class="headerIcons flex">
             <div class="headerFav">
-                <i class="fa-regular fa-heart"></i>
-                <span class="count cartCount mr-20 flex">0</span>
+              <i class="fa-regular fa-heart"></i>
+              <span class="count cartCount mr-20 flex">0</span>
             </div>
             <div class="headerCart">
-                <i class="fa fa-shopping-cart"></i>
-                <span class="count cartCount flex">0</span>
+              <i class="fa fa-shopping-cart"></i>
+              <span class="count cartCount flex">0</span>
             </div>
           </div>
+        </div>
+      </div>
+      <!-- BOTTOM HEADER -->
+      <div class="bottomHeader">
+        <div class="container">
+          <nav class="nav">
+            <div class="categoryNav flex position-relative">
+              <div class="catogryBtn flex">
+                <i class="fa fa-bars"></i>
+                <span>All Categories</span>
+                <i class="fa fa-arrow-down"></i>
+              </div>
+              <div class="categoryNavList position-absolute flex hidden">
+                <a href="">Top 10 Offers</a>
+                <a href="">Electronics</a>
+                <a href="">Phones & Tablets</a>
+                <a href="">Fashion & Clothings</a>
+                <a href="">Toys & Hobbies</a>
+                <a href="">Jewelry & Watches</a>
+              </div>
+              <ul class="navLinks flex">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Accesories</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+              <div class="loginSignup">
+                <a href="#" class="btn"
+                  >Login <i class="fa-solid fa-right-to-bracket"></i
+                ></a>
+                <a href="#" class="btn"
+                  >Signup <i class="fa fa-user-plus"></i
+                ></a>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
+    <script src="js/main.js"></script>
   </body>
 </html>
