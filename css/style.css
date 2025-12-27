@@ -30,9 +30,17 @@ h6 {
   color: var(--color-heading);
   font-family: "DM Sans", sans-serif;
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 a {
   color: inherit;
@@ -122,6 +130,7 @@ textarea {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: box-shadow 0.3s ease;
+  display: flex;
 }
 .card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
@@ -293,4 +302,41 @@ header .bottomHeader .categoryNav .categoryNavList a {
 .categoryNavList a:hover {
   background-color: var(--bg-color);
   color: var(--main-color);
+}
+
+/* Slider Styles */
+.swiper {
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bannerSide {
+  width: 30%;
+  margin-left: 20px;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+  opacity: 1;
+  width: 30px;
+  height: 8px;
+  border-radius: 20px;
+}
+.swiper-wrapper {
+  height: auto;
 }
