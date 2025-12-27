@@ -340,3 +340,56 @@ header .bottomHeader .categoryNav .categoryNavList a {
 .swiper-wrapper {
   height: auto;
 }
+.bannersFor {
+  display: flex;
+  gap: 20px;
+}
+.bannersFor .container.flex {
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+.bannersFor .card:hover img {
+  transform: scale(1.05);
+}
+.bannersFor .card {
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+.bannersFor .card img {
+  transition: transform 0.3s ease;
+}
+.bannersFor .card .text h5:nth-child(1) {
+  font-weight: bold;
+}
+.bannersFor .card .text h5:nth-child(2) {
+  color: var(--sale-color);
+}
+.bannersFor .card .text .sale {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.bannersFor .text {
+  flex-direction: column;
+  justify-content: space-around;
+}
+.swiper-slide .card {
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
