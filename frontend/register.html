@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>إنشاء حساب جديد</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="register-section">
+      <div class="container">
+        <div class="card register-card">
+          <h2>إنشاء حساب جديد</h2>
+
+          <form id="registerForm">
+            <div class="form-group">
+              <label>الاسم الكامل</label>
+              <input
+                type="text"
+                id="name"
+                class="input-field"
+                placeholder="أدخل اسمك الثلاثي"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>البريد الإلكتروني</label>
+              <input
+                type="email"
+                id="email"
+                class="input-field"
+                placeholder="example@mail.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>كلمة المرور</label>
+              <input
+                type="password"
+                id="password"
+                class="input-field"
+                placeholder="********"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>تأكيد كلمة المرور</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                class="input-field"
+                placeholder="********"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn register-btn">إنشاء الحساب</button>
+          </form>
+
+          <div class="register-footer">
+            <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+            <p class="mt-20">
+              <a
+                href="index.html"
+                style="
+                  color: var(--p-color);
+                  font-weight: normal;
+                  font-size: 12px;
+                "
+              >
+                العودة للرئيسية
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/register.js"></script>
+  </body>
+</html>
