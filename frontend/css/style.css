@@ -822,6 +822,38 @@ footer .bottom_footer .payment_img {
   display: none;
 }
 
+/* Login Page */
+.login-card{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login-card h2{
+  margin-bottom: 20px;
+}
+.form-group{
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: end;
+}
+.form-group label{
+  margin-left: 10px;
+ 
+}
+.form-group input{
+  border: 1px solid var(--border_color);
+  padding: 5px 10px 5px 10px;
+  font-size: 17px;
+}
+.login-footer p{
+  margin-bottom: 10px;
+}
+.login-footer p a{
+  color: var(--main_color);
+  font-weight: bold;
+  
+}
 /* STart Responsive */
 
 @media (max-width: 1100px) {
