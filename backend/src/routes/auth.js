@@ -2,7 +2,6 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const router = express.Router();
 
-// مؤقت (بدل DB)
 const users = [];
 
 router.post("/register", (req, res) => {

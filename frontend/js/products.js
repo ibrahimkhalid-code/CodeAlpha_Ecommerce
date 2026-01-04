@@ -1,11 +1,8 @@
-// المكان اللي عايز تعرض فيه المنتجات
 const container = document.querySelector("#products-container");
 
-// جلب المنتجات من الـ Backend
 fetch("http://localhost:5000/api/products")
   .then((res) => res.json())
   .then((products) => {
-    // عرض المنتجات في الصفحة
     container.innerHTML = products
       .map(
         (p) => `

@@ -16,17 +16,14 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     const data = await response.json();
 
     if (!response.ok) {
-      alert(data.message || "بيانات الدخول غير صحيحة");
       return;
     }
 
-    // حفظ التوكن واسم المستخدم
     localStorage.setItem("token", data.token);
     localStorage.setItem("name", data.user.name);
 
-    // تحويل للداشبورد
     window.location.href = "dashboard.html";
   } catch (error) {
-    alert("حصل خطأ في الاتصال بالسيرفر");
+    alert("server is not connected");
   }
 });

@@ -3,7 +3,7 @@ const orders = require("../data/orders");
 
 const router = express.Router();
 
-// إنشاء طلب جديد
+
 router.post("/", (req, res) => {
   const { userName, cartItems, totalPrice } = req.body;
 
@@ -28,7 +28,6 @@ router.post("/", (req, res) => {
   });
 });
 
-// جلب كل الطلبات (للدashboard)
 router.get("/", (req, res) => {
   res.json(orders);
 });

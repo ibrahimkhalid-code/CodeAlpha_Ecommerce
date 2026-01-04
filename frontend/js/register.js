@@ -29,11 +29,9 @@ document
         return;
       }
 
-      // حفظ البيانات
       localStorage.setItem("token", data.token);
       localStorage.setItem("name", data.user.name);
 
-      // تحويل للداشبورد
       window.location.href = "dashboard.html";
     } catch (error) {
       alert("فشل الاتصال بالسيرفر");

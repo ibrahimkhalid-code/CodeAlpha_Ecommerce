@@ -16,9 +16,8 @@ function checkout() {
   })
     .then((res) => res.json())
     .then((data) => {
-      alert("✅ تم تأكيد الطلب");
       localStorage.removeItem("cart");
       window.location.href = "dashboard.html";
     })
-    .catch(() => alert("❌ حدث خطأ"));
+    .catch(() => alert("wrong"));
 }

@@ -1,6 +1,5 @@
 const Product = require("../models/Product");
 
-// جلب كل المنتجات
 const getAllProducts = async (req, res) => {
   try {
     const products = await Product.find();
@@ -10,7 +9,6 @@ const getAllProducts = async (req, res) => {
   }
 };
 
-// إضافة منتج جديد (للتجربة أو Admin)
 const addProduct = async (req, res) => {
   try {
     const newProduct = new Product(req.body);
