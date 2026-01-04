@@ -1,10 +1,24 @@
-const app = require("./app");
+const express = require('express');
+const bodyParser = require('body-parser');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const mysql = require('mysql2/promise');
 
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+const app = express();
+app.use(bodyParser.json());
 
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
-});
+const SECRET_KEY = "mysecretkey";
+
+// إنشاء اتصال بقاعدة البيانات
+const dbConfig = {
+  host: 'localhost',
+  user: 'root',
+  password: '', // ضع كلمة مرور MySQL هنا
+  database: 'myapp'
+};
+
+let db;
+(async function initDB() {
+  db = await mysql.createConnection(dbConfig);
+  console.log("Connected to MySQL database");
+})();
